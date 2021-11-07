@@ -1,0 +1,117 @@
+body {
+  margin: 15px auto 100px;
+  background-color: #1a1a1d;
+}
+
+.container {
+  /*width: 85%;*/
+  /*overflow: auto;*/
+}
+
+.container h1 {
+  text-align: center;
+}
+
+/*!* Sticky footer *!*/
+/*.sticky {*/
+  /*position: fixed;*/
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*width: 100%;*/
+  /*padding: 50px;*/
+  /*!*background-color: darkturquoise;*!*/
+  /*text-align: center;*/
+/*}*/
+
+/* Sticky footer */
+.footer {
+  /*display: inline-block;*/
+  /*position: absolute;*/
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  /*height: 20%;*/
+  /*background-color: darkturquoise;*/
+  text-align: center;
+  color: #bababc;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.footer a {
+  color: #bababc;
+  font-size: 10px;
+}
+
+.themes {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.themes p {
+  margin-bottom: 5px;
+}
+
+.tableWrapper {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #6f2232;
+}
+
+.table {
+  color: whitesmoke;
+  border-style: hidden;
+}
+
+.table th{
+  border-top: none;
+}
+
+.table td {
+  background-color: #c3073f;
+  border-left: 1px solid #6f2232;
+  /*border-radius: 5px;*/
+}
+
+.titles {
+  /*color: #c3073f;*/
+  color: whitesmoke;
+  text-align: left;
+}
+
+.subtitles {
+  color: #bababc;
+  text-align: left;
+}
+
+#addItemButton {
+  background-color: #c3073f;
+  color: whitesmoke;
+}
+
+#deleteItemButton {
+  background-color: #bababc;
+  color: black;
+}
+
+.colors {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#theme1 {
+  border: 2px solid white;
+  background-color: white;
+}
+
+#theme2 {
+  border: 2px solid white;
+  background-color: black;
+}
+

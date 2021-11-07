@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="style.css">-->
+  <!--<link rel="stylesheet" href="dark.css">-->
+
+  <link id="pageStyle" rel="stylesheet" type="text/css" href="style.css">
+  <title>Shopping List</title>
+
+  <script type="text/javascript" src="list.js"></script>
+  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+
+</head>
+
+
+<body>
+<div class="container">
+  <h1 class="titles">Shopping List</h1>
+  <h4 id="total" class="subtitles">Total</h4>
+
+  <div class="tableWrapper">
+    <table id="myTable" class="table border-bottom">
+      <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">$ Price</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <!--<td contenteditable="true" oninput="saveList()"></td>-->
+        <!--<td contenteditable="true" oninput="sumColumn(); saveList()">$</td>-->
+      </tr>
+      </tbody>
+    </table>
+
+    <div class="buttons text-center">
+      <button id='addItemButton' onclick="addRow()" type="button" class="btn">Add Item</button>
+      <!--<button id='dark' onclick="addRow()" type="button" class="btn btn-light">Dark</button>-->
+      <!--<button onclick="sumColumn()" type="button" class="btn btn-dark">Sum</button>-->
+      <!--<button onclick="getTable()" type="button" class="btn btn-dark">Restore</button>-->
+      <!--<button onclick="emptyList()" type="button" class="btn btn-dark">Clear</button>-->
+
+
+      <button id='deleteItemButton' class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+        Clear
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" onclick="emptyList()">Delete List</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <hr>
+    <div class="themes">
+      <p class="footerText">Choose a Theme</p>
+      <span><button id='theme1' onclick="changeTheme('style.css')" type="button" class="colors"></button></span>
+      <span><button id='theme2' onclick="changeTheme('dark.css')" type="button" class="colors"></button></span>
+    </div>
+    <a target="_blank" href="https://juliankeller.github.io/">Created by Julian Keller</a>
+    <a >&copy; 2019</a>
+  </div>
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+</html>
