@@ -50,6 +50,7 @@ body {
 
 
 .tableWrapper {
+  padding-top: 10px;
   border-radius: 5px;
   padding: 20px;
   background-color: whitesmoke;
@@ -111,4 +112,3 @@ body {
   border: 2px solid darkgray;
   background-color: black;
 }
-

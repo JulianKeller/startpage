@@ -56,9 +56,31 @@ body {
 }
 
 .tableWrapper {
+  /* padding-top: 20px;
+  padding-bottom 20px; */
   border-radius: 5px;
   padding: 20px;
+  /* padding: 10px 10px 10px 10px;  */
+  margin: 15px 0px 15px 0px;
   background-color: #6f2232;
+}
+
+.appButton {
+  border-radius: 5px;
+  padding: 20px;
+  /* padding: 10px 20px 10px 10px;  */
+  margin: 15px 0px 15px 0px;
+  /* background-color: #6f2232; */
+  background-color: rgba(0, 0, 0, .4);
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+}
+
+.appButton:hover {
+  /* background-color: #FFFFFF; */
+  filter: brightness(150%);
+  /* border: 2px solid black; */
 }
 
 .table {
@@ -115,3 +137,33 @@ body {
   background-color: black;
 }
 
+#hbo:hover {
+  /* background-color: ; */
+  background-image: linear-gradient(to right, #5822b4, #7a22b4);
+}
+
+#paramount:hover {
+  /* background-color: #005ef7; */
+  background-image: linear-gradient(to right, #002df7, #005ef7);
+}
+
+#hulu:hover {
+  /* background-color: #3dbb3d; */
+  background-image: linear-gradient(to right, #3dbb3d , #3dbb65);
+  color: black;
+}
+
+#roku:hover {
+  /* background-color: #843abc; */
+  background-image: linear-gradient(to right, #613abc, #843abc);
+}
+
+#youtube:hover {
+  /* background-color: #FF0000; */
+  background-image: linear-gradient(to right, #b80000, #FF0000);
+}
+
+#disney:hover {
+  /* background-color: #0a2361; */
+  background-image: linear-gradient(to right, #070626 , #101c50);
+}
