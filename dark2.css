@@ -1,6 +1,7 @@
 body {
   margin: 15px auto 100px;
-  background-color: #d7d7d7;
+  background-color: #1a1a1d;
+  color: whitesmoke;
 }
 
 .container {
@@ -14,10 +15,6 @@ body {
 
 .container h1 {
   text-align: center;
-}
-
-h2:hover {
-  color: #7a22b4
 }
 
 /* Sticky footer */
@@ -115,4 +112,8 @@ h2:hover {
 #theme2 {
   border: 2px solid darkgray;
   background-color: black;
+}
+
+h2:hover {
+  color: #7a22b4
 }
