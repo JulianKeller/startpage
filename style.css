@@ -59,7 +59,22 @@
 @media (max-width: 1000px) {
     .box {
       width: calc(100% - 20px);
+      font-size: 60px;
+      height: auto;
+      margin-bottom: 5%;
+      padding-bottom: 50px;
+      border-radius: 30px;
     }
+
+a {
+    margin-bottom: 100px;
+    }
+
+  .box-title {
+        font-size: 70px;
+        margin-bottom: 100px;
+  }
+
     .container {
         margin: 10px;
     }

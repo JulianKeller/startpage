@@ -11,6 +11,12 @@
 <!--    <h1>Start</h1>-->
     <div class="container">
       <div class="box">
+        <div class="box-title" style="color: lightblue;">
+          Weather
+        </div>
+        <div id="weather">Loading weather...</div>
+      </div>
+      <div class="box">
         <div class="box-title" style="color: lightgreen;">
           Dev
         </div>
@@ -44,17 +50,12 @@
         </div>
         <a href="https://music.apple.com" target="_blank">apple music</a>
       </div>
-      <div class="box">
-        <div class="box-title" style="color: lightblue;">
-          Weather
-        </div>
-        <div id="weather">Loading weather...</div>
-      </div>
+
 
     </div>
   </body>
 <script>
-    const API_URL = `https://api.open-meteo.com/v1/forecast?latitude=4&longitude=-122.53&current_weather=true&temperature_unit=fahrenheit`;
+    const API_URL = `https://api.open-meteo.com/v1/forecast?latitude=45.78&longitude=-122.53&hourly=temperature_2m&current_weather=true&temperature_unit=fahrenheit`;
 
     async function getWeather() {
       const response = await fetch(API_URL);
@@ -62,7 +63,7 @@
 
       const temperature = data.current_weather.temperature;
 
-      document.getElementById("weather").innerHTML = `${temperature}°F`;
+      document.getElementById("weather").innerHTML = `${temperature}° F`;
     }
 
     getWeather();
