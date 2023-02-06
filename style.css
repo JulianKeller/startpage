@@ -1,6 +1,7 @@
 
 
  body {
+    padding-top: 100px;
     background: black;
     font-color: white;
     font-family: courier;
@@ -20,7 +21,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-    margin: 100px;
+  margin: 100px;
+  margin-top: 50px
 
 }
 
@@ -54,6 +56,36 @@
   a:hover {
       color: pink;
     font-size: 25px;
+  }
+
+
+.search-container {
+    margin: auto;
+    background-color: grey;
+    //padding: 10px;
+    border-radius: 5px;
+    margin-top: 1000xpx;
+    width: 60%;
+  }
+
+  .search-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0 10px;
+    width: 60%;
+    color: white;
+  }
+
+  .search-button {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
   }
 
 @media (max-width: 1000px) {
