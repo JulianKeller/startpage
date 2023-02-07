@@ -28,7 +28,8 @@
 
 
  .box {
-        width: calc(33.33% - 20px);
+        //width: calc(33.33% - 20px);
+        width: 300px;
         margin: 10px;
         padding-top: 5%;
         background-color: white;
