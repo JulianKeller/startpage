@@ -16,10 +16,12 @@
 <!--    <h1>Start</h1>-->
     <div class="container">
       <div class="box">
-        <div class="box-title" style="color: lightblue;">
+        <div class="box-title" style="color: lightblue;" onload="getLocation()">
           Weather
         </div>
-        <div id="weather">Loading weather...</div>
+        <div id="weather" onload="getWeather()">Loading weather...</div>
+        <div id="datetime">Loading date...</div>
+        <div id="location">Loading data...</div>
       </div>
       <div class="box">
         <div class="box-title" style="color: lightgreen;">
@@ -39,40 +41,36 @@
       </div>
 
       <div class="box">
-        <div class="box-title" style="color: mediumpurple;">
+        <div class="box-title" style="color: teal;">
           3D Printing
         </div>
         <a href="https://www.thingiverse.com/" target="_blank">thingiverse</a>
       </div>
       <div class="box">
-        <div class="box-title" style="color: coral;">
+        <div class="box-title" style="color: mediumpurple;">
           Social
         </div>
         <a href="https://discord.com/channels/@me" target="_blank">discord</a>
       </div>
       <div class="box">
-        <div class="box-title" style="color: tomato;">
+        <div class="box-title" style="color: crimson;">
           Music
         </div>
         <a href="https://music.apple.com" target="_blank">apple music</a>
       </div>
 
-
+      <div class="box">
+        <div class="box-title" style="color: tomato;">
+          Productivity
+        </div>
+        <a href="https://account.proton.me/login?product=mail&language=en" target="_blank">Proton Mail</a>
+        <a href="https://account.proton.me/login?product=drive&language=en" target="_blank">Proton Drive</a>
+        <a href="https://account.proton.me/login?product=calendar&language=en" target="_blank">Proton Calendar</a>
+      </div>
     </div>
 
+  <script src="weather.js"></script>
+  <script src="datetime.js"></script>
   </body>
-<script>
-    const API_URL = `https://api.open-meteo.com/v1/forecast?latitude=45.78&longitude=-122.53&hourly=temperature_2m&current_weather=true&temperature_unit=fahrenheit`;
 
-    async function getWeather() {
-      const response = await fetch(API_URL);
-      const data = await response.json();
-
-      const temperature = data.current_weather.temperature;
-
-      document.getElementById("weather").innerHTML = `${temperature}° F`;
-    }
-
-    getWeather();
-  </script>
 </html>
