@@ -19,6 +19,8 @@ async function getWeather() {
   }
 }
 
-window.onload = function() {
-  getWeather();
-}
+//window.onload = function() {
+//  getWeather();
+//}
+
+setInterval(getWeather, 10000); // update every 10 seconds
