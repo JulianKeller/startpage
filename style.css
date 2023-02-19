@@ -26,12 +26,15 @@
 
 }
 
-#datetime {
+#datetime, #debug {
     color: white;
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
+
+
 
  .box {
     //width: calc(33.33% - 20px);
