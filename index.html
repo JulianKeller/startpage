@@ -11,20 +11,21 @@
 
     <div id="debug"></div>
 
-
     <form class="search-container" action="https://www.startpage.com/do/search" method="get" target="_blank">
       <input class="search-button" type="submit" value="Search">
       <input class="search-input" type="text" name="query" placeholder="Search Startpage">
     </form>
 
 <div class="container">
+
       <div class="box">
         <div class="box-title" style="color: lightblue;" onload="getLocation()">
-          Weather
+          Info
         </div>
         <div id="weather"></div>
           <div id="latitude"></div>
           <div id="longitude"></div>
+          <div id="datetime">Loading date...</div>
 
       </div>
       <div class="box">
@@ -73,7 +74,7 @@
       </div>
     </div>
 
-<div id="datetime">Loading date...</div>
+
 
 
   <script src="weather.js"></script>
