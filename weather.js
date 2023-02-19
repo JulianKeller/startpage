@@ -37,8 +37,8 @@ function showPosition(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
-    document.getElementById("latitude").innerHTML = latitude;
-    document.getElementById("longitude").innerHTML = longitude;
+//    document.getElementById("latitude").innerHTML = latitude;
+//    document.getElementById("longitude").innerHTML = longitude;
 
     const response = fetch(`${API_URL}&latitude=${latitude}&longitude=${longitude}`);
     const data = response.json();
@@ -66,7 +66,7 @@ function showPosition(position) {
 var options = {
     maximumAge: 30000, // Cache age in milliseconds (30 seconds)
     enableHighAccuracy: false, // Get approximate location
-    timeout: 5000,  // timeout after5 seconds
+    timeout: 5000,  // timeout after 5 seconds
   };
 
 async function getLocationWeather() {
