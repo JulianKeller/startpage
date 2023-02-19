@@ -26,10 +26,17 @@
 
 }
 
+#datetime, #weather-art {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
 
  .box {
         //width: calc(33.33% - 20px);
         width: 300px;
+        min-width: 300px;
         margin: 10px;
         padding-top: 5%;
         background-color: white;
@@ -40,7 +47,7 @@
         align-items: center;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 5px;
-        font-size; 20px
+        font-size; 20px;
       }
 
   .box-title {
@@ -55,19 +62,23 @@
   }
 
   a:hover {
-      color: pink;
-    font-size: 25px;
+      border-radius: 5px;
+      color: lightgreen;
   }
 
 
 .search-container {
     margin: auto;
-    background-color: grey;
+    background-color: black;
     //padding: 10px;
     border-radius: 5px;
     margin-top: 1000xpx;
-    width: 60%;
+    //margin: 100px;
+    width: calc(310px * 3);
+    border: 1px inset lightgreen;
+    white-space: nowrap; // prevent weird search bar wrap around
   }
+
 
   .search-input {
     border: none;
@@ -89,7 +100,7 @@
     cursor: pointer;
   }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-device-width: 414px) and (max-device-height: 896px){
     .box {
       width: calc(100% - 20px);
       font-size: 60px;

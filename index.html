@@ -6,22 +6,23 @@
   <link rel="stylesheet" href="style.css">
 <!--  <title>Home</title>-->
 </head>
+<body>
+<!--    <h1>Start</h1>-->
 
 <form class="search-container" action="https://www.startpage.com/do/search" method="get" target="_blank">
   <input class="search-button" type="submit" value="Search">
   <input class="search-input" type="text" name="query" placeholder="Search Startpage">
 </form>
-
-<body>
-<!--    <h1>Start</h1>-->
     <div class="container">
+
+
+
       <div class="box">
         <div class="box-title" style="color: lightblue;" onload="getLocation()">
           Weather
         </div>
-        <div id="weather" onload="getWeather()">Loading weather...</div>
-        <div id="datetime">Loading date...</div>
-        <div id="location">Loading data...</div>
+        <div id="weather">Loading weather...</div>
+
       </div>
       <div class="box">
         <div class="box-title" style="color: lightgreen;">
@@ -69,8 +70,16 @@
       </div>
     </div>
 
+<div id="datetime">Loading date...</div>
+
+
   <script src="weather.js"></script>
   <script src="datetime.js"></script>
+
+
+
+
+
   </body>
 
 </html>
